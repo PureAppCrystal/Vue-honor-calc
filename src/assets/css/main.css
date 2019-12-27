@@ -8,7 +8,7 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     height: 100%;
     width: 100%;
   }
@@ -16,21 +16,68 @@ html, body {
     width: 100%;
     
   }
+
+  .main-title{
+    color: gray;
+    font-size: 20px;
+    border-bottom: solid 1px gray;
+    padding-bottom: 1rem;
+    
+  }
   #content-left {
-    background-color: rgb(160, 141, 141);
+    /* background-color: rgb(160, 141, 141); */
     padding: 2rem;
   }
   .content-box {
     border: solid 1px gray;
     border-radius: 10px;
-    background-color:teal;
+    background-color:white;
     margin-bottom: 1rem;
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.1); box-shadow: 0 0 20px rgba(0,0,0,0.1) 
   }
   
+  .box-title {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1d80b6;
+    text-align: left;
+    padding: 1rem 1rem 1rem 1rem;
+    
+  }
+  
+  .label {
+    color: gray;
+  }
+  .result {
+    font-weight: 600;
+  }
+  .grade {
+    color:red;
+  }
+  .braket {
+    color: blue;
+  }
+
+  #content-right {
+    padding: 2rem;
+    /* background-color: gray; */
+  }
+  
+  #content-right .content-box {
+    /* border: none 0px;
+    border-radius: 0px; */
+  }
+
+
+
+
+/* ///////// */
   .value-input {
     width: 100%;
     border-bottom: solid 1px;
     outline: none;
+    text-align: center;
   }
 
   .value-select {
@@ -39,22 +86,30 @@ html, body {
       position: relative;
       margin-top: 0px;
       padding-top: 0px;
+      /* padding-left: 15px; */
+      width: 100%;
+      text-align: center;
+  }
+  .v-select__selection--comma {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+
+  .value-switch {
+    height: 10px;
+      
+      position: relative;
+      margin-top: 0px;
+      padding-top: 0px;
       padding-left: 15px;
       width: 100%;
+      text-align: center;
+      
   }
-  
-  
-  .box-title {
+
+  .value-img {
     width: 100%;
-    background-color: yellow;
+    height: auto;
   }
   
-  #content-right {
-    padding: 2rem;
-    background-color: gray;
-  }
-  
-  #content-right .content-box {
-    border: none 0px;
-    border-radius: 0px;
-  }
