@@ -59,7 +59,8 @@
                 </v-row>
                 <v-row>
                   <v-col cols="4" class="label">결과 경험치</v-col>
-                  <v-col cols="3" class="result">{{nextExp}}</v-col>
+                  <v-col cols="2" class="result">{{nextExp}}</v-col>
+                  <v-col cols="2"><v-button @click="setToNow()">갱신</v-button></v-col>
                   <v-col cols="4" class="grade">{{nextExpGrade}}</v-col>
                 </v-row>
               </v-col>
@@ -282,6 +283,9 @@ export default {
       }
 
       return result
+    },
+    setToNow: function() {
+      this.nextNow = this.nextExp;
     }
 
   }
