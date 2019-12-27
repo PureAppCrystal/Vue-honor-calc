@@ -16,7 +16,6 @@
                   <v-col cols="2">label</v-col>
                   <v-col cols="4">
                     <input type="number" class="value-input"/>
-                    
                   </v-col>
                   <v-col cols="1">label</v-col>
                   <v-col cols="5">
@@ -27,7 +26,6 @@
                         return-object
                         class="value-select"
                     ></v-select>
-
                   </v-col>
                 </v-row>
               </v-col>
@@ -35,7 +33,7 @@
                 <div class="box-title"> aa</div>
                 <v-row>
                   <v-col cols="4">label</v-col>
-                  <v-col cols="8">value</v-col>
+                  <v-col cols="8"><input type="number" class="value-input"/></v-col>
                 </v-row>
                 <v-row>
                   <v-col cols="4">label</v-col>
@@ -47,12 +45,12 @@
                 <div class="box-title"> aa</div>
                 <v-row>
                   <v-col cols="4">label</v-col>
-                  <v-col cols="4">value</v-col>
+                  <v-col cols="4"><input type="number" class="value-input" /></v-col>
                   <v-col cols="4">value</v-col>
                 </v-row>
                 <v-row>
                   <v-col cols="4">label</v-col>
-                  <v-col cols="4">value</v-col>
+                  <v-col cols="4"><input type="number" class="value-input"/></v-col>
                   <v-col cols="4">value</v-col>
                 </v-row>
                 <v-row>
@@ -64,12 +62,12 @@
                 <div class="box-title"> aa</div>
                 <v-row>
                   <v-col cols="4">label</v-col>
-                  <v-col cols="4">value</v-col>
+                  <v-col cols="4"><input type="number" class="value-input"/></v-col>
                   <v-col cols="4">value</v-col>
                 </v-row>
                 <v-row>
                   <v-col cols="4">label</v-col>
-                  <v-col cols="8">value</v-col>
+                  <v-col cols="8"><input type="number" class="value-input"/></v-col>
                 </v-row>
                 <v-row>
                   <v-col cols="4">label</v-col>
@@ -108,8 +106,8 @@ export default {
   data() {
     return {
       totalPeople: 0,
-      selectCamp: {CODE_CD:0, CODE_NAME:"얼라"},
-      campList:[{CODE_CD:0, CODE_NAME:"얼라"},{CODE_CD:1, CODE_NAME:"호드"}],
+      selectCamp: {CODE_CD:0, CODE_NAME:"data1"},
+      campList:[{CODE_CD:0, CODE_NAME:"data1"},{CODE_CD:1, CODE_NAME:"data2"}],
 
       expectRank: 1,
 
