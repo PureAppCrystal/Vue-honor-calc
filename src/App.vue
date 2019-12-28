@@ -14,7 +14,7 @@
                 <v-row>
                   <v-col cols="4" class="label">서버인구</v-col>
                   <v-col cols="8">
-                    <input type="number" class="value-input" v-model="totalPeople"  @keyup="checkNumber($event)"/>
+                    <input type="number" class="value-input" v-model="totalPeople"  @keyup="checkNumber($event)" @change="saveTotalPeople()" />
                   </v-col>
                   <v-col cols="4" class="label">진영</v-col>
                   <v-col cols="8">
@@ -24,6 +24,7 @@
                         item-text="CODE_NAME"
                         return-object
                         class="value-select"
+                        :change="campClick(selectCamp)"
                     ></v-select>
                   </v-col>
                 </v-row>
@@ -296,8 +297,31 @@ export default {
     },
     setToNow: function() {
       this.nextNow = this.nextExp;
+    },
+    saveTotalPeople: function() {
+      const totalPeople = this.totalPeople === '' ? 0 : this.totalPeople;
+      localStorage.setItem("honorCalc_tp", totalPeople);
+    },
+    campClick: function(camp) {
+      localStorage.setItem("honorCalc_camp", JSON.stringify(camp))
     }
 
+  },
+  created() {
+    // totalPeople set
+    let totalPeople = localStorage.getItem("honorCalc_tp")
+    if (totalPeople === null || totalPeople === 0 || totalPeople === '') {
+      totalPeople = 4000;
+    } 
+    this.totalPeople = totalPeople;
+
+    // camp set
+    let camp = JSON.parse(localStorage.getItem("honorCalc_camp"))
+    console.log('camp : ', camp)
+    if (camp === null || camp === '') {
+      camp = {CODE_CD:2, CODE_NAME:"호드"};
+    } 
+    this.selectCamp = camp;
   }
 };
 </script>
