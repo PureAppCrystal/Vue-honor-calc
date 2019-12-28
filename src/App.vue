@@ -317,7 +317,6 @@ export default {
 
     // camp set
     let camp = JSON.parse(localStorage.getItem("honorCalc_camp"))
-    console.log('camp : ', camp)
     if (camp === null || camp === '') {
       camp = {CODE_CD:2, CODE_NAME:"호드"};
     } 
