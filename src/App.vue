@@ -34,7 +34,7 @@
                   <v-col cols="4" class="label">순위</v-col>
                   <v-col cols="4"><input type="number" class="value-input" v-model="expectRank" @keyup="checkNumber($event)"/></v-col>
                   <v-col cols="4">
-                    <v-switch v-model="nextGetAuto" :label="'AutoSet'" class="value-switch tooltip">
+                    <v-switch v-model="nextGetAuto" :label="''" class="value-switch tooltip">
                     </v-switch>
                   </v-col>
                 </v-row>
