@@ -1,13 +1,11 @@
 <template>
   <v-app>
     <div id="content">
-
+      <!-- header -->
+      <div class="main-title">WOW Classic Honor RP Calculator</div>
       <v-container>
-      
         <v-row>
           <v-col cols="12" md="12"  id='content-top'>
-            <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-            <div class="main-title">WOW Classic Honor RP Calculator</div>
           </v-col>
           <v-col cols="12" md="6"  id='content-left'>
             <v-row style="display: flex; justify-content: center;">
@@ -41,7 +39,7 @@
                   </v-col>
                 </v-row>
                 <v-row>
-                  <v-col cols="4" class="label">점수</v-col>
+                  <v-col cols="4" class="result">점수</v-col>
                   <v-col cols="4" class="result">{{expectResult.exp}}</v-col>
                   <v-col cols="4" class="braket">{{expectResult.braket}}</v-col>
                 </v-row>
@@ -58,9 +56,9 @@
                   <v-col cols="8"><input type="number" class="value-input" v-model="nextGet" @keyup="checkNumber($event)"/></v-col>
                 </v-row>
                 <v-row>
-                  <v-col cols="4" class="label">결과 경험치</v-col>
+                  <v-col cols="4" class="result">결과 경험치</v-col>
                   <v-col cols="2" class="result">{{nextExp}}</v-col>
-                  <v-col cols="2"><v-button @click="setToNow()">갱신</v-button></v-col>
+                  <v-col cols="2"><button class="value-button" @click="setToNow()">갱신</button></v-col>
                   <v-col cols="4" class="grade">{{nextExpGrade}}</v-col>
                 </v-row>
               </v-col>
@@ -77,7 +75,7 @@
                   <v-col cols="4" class="grade">{{needTargetGrade}}</v-col>
                 </v-row>
                 <v-row>
-                  <v-col cols="4" class="label">필요 경험치</v-col>
+                  <v-col cols="4" class="result">필요 경험치</v-col>
                   <v-col cols="8" class="result">{{needExp}}</v-col>
                 </v-row>
               </v-col>
@@ -94,10 +92,22 @@
                 <div class="box-title"> Braket</div>
                 <img alt="Vue logo" src="./assets/img/braket.png" class="value-img">
               </v-col>
+              <v-col cols="12"  class="value-noti">
+                이미지 출처 : <a href="http://www.inven.co.kr/webzine/news/?news=231067&site=wow">http://www.inven.co.kr/webzine/news/?news=231067&site=wow</a>
+              </v-col>
+
             </v-row>
           </v-col>  
+          <v-col cols="12" md="12"  id='content-bottom'>
+          </v-col>
         </v-row>
       </v-container>
+      <!-- footer -->
+      <div class="main-footer">
+        <div>v1.0.0</div>
+        <div>2019-12-28</div>
+        <div>라그나로스 호드 Sinaly</div>
+      </div>
     </div>
   </v-app>
 </template>
