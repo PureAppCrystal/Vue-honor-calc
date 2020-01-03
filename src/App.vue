@@ -105,8 +105,8 @@
       </v-container>
       <!-- footer -->
       <div class="main-footer">
-        <div>v1.0.0</div>
-        <div>2019-12-28</div>
+        <div>v1.0.1</div>
+        <div>2020-01-03</div>
         <div>라그나로스 호드 Sinaly</div>
       </div>
     </div>
