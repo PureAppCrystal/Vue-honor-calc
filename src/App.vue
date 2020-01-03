@@ -115,6 +115,7 @@
 
 <script>
 
+import firebase from './firebase'
 export default {
   name: 'App',
 
@@ -304,10 +305,27 @@ export default {
     },
     campClick: function(camp) {
       localStorage.setItem("honorCalc_camp", JSON.stringify(camp))
+    },
+    dbInit: function() {
+      try {
+        console.log("dbInit!")
+        const db = firebase.database();
+        const name = db.ref("/testdb/name")
+        console.log("name : ", name);
+        // db.ref('/testdb/name').once('value').then(function(snapshot) {
+        //   console.log("snampshot : ", snapshot)
+        // })
+
+      } catch (e) {
+        console.log("catch")
+        console.log("e : ", e)
+      }
     }
 
   },
   created() {
+
+    this.dbInit();''
     // totalPeople set
     let totalPeople = localStorage.getItem("honorCalc_tp")
     if (totalPeople === null || totalPeople === 0 || totalPeople === '') {
