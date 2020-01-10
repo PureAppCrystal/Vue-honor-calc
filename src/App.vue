@@ -87,14 +87,14 @@
             <v-row>
               <v-col cols="12"  class="content-box">
                 <div class="box-title"> 계급도</div>
-                <img alt="Vue logo" src="./assets/img/grade.png" class="value-img">
+                <img alt="Vue logo" src="./assets/img/grade2.png" class="value-img">
               </v-col>
               <v-col cols="12"  class="content-box">
                 <div class="box-title"> Braket</div>
-                <img alt="Vue logo" src="./assets/img/braket.png" class="value-img">
+                <img alt="Vue logo" src="./assets/img/braket2.png" class="value-img">
               </v-col>
               <v-col cols="12"  class="value-noti">
-                이미지 출처 : <a href="http://www.inven.co.kr/webzine/news/?news=231067&site=wow">http://www.inven.co.kr/webzine/news/?news=231067&site=wow</a>
+                이미지 데이터 출처 : <a href="http://www.inven.co.kr/webzine/news/?news=231067&site=wow">http://www.inven.co.kr/webzine/news/?news=231067&site=wow</a>
               </v-col>
 
             </v-row>
@@ -105,8 +105,10 @@
       </v-container>
       <!-- footer -->
       <div class="main-footer">
-        <div>v1.0.1</div>
-        <div>2020-01-03</div>
+        <!-- <div>v1.0.1</div>
+        <div>2020-01-03</div> -->
+        <div>v1.0.2</div>
+        <div>2020-01-10</div>
         <div>라그나로스 호드 Sinaly</div>
       </div>
     </div>
